@@ -2,6 +2,7 @@ import React from 'react'
 import main from '../../images/main.png'
 import s from './Main.module.sass'
 import Button from '../../UI/Button'
+import RadioBtn from '../../UI/RadioBtn/RadioBtn'
 
 export default function Main() {
   return (
@@ -17,8 +18,13 @@ export default function Main() {
             </div>
             <div className={s.btn}>
                 <Button />
-                <div>Read Free Demo</div>
-            </div>    
+                <a href='#'>Read Free Demo</a>
+            </div> 
+            <div className={s.points}>
+                <RadioBtn data={{'name':'Pages:', 'text': '250pages'}}></RadioBtn>   
+                <RadioBtn data={{'name':'Length:', 'text': '10 Hours'}}></RadioBtn>  
+                <RadioBtn data={{'name':'Rating:', 'text': '4.5/5 (305 ratings)'}}></RadioBtn>
+            </div>  
         </div>
         <div>
             <img src={main} alt="Main book" />
