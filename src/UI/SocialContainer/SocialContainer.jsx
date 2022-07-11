@@ -8,8 +8,8 @@ export default function SocialContainer() {
   return (
     <ul className={s.social}>
               <li><a href='#'><FontAwesomeIcon icon={faFacebookSquare} /></a></li>
-              <li><FontAwesomeIcon icon={faInstagramSquare} /></li>
-              <li><FontAwesomeIcon icon={faTwitterSquare} /></li>  
+              <li><a href='#'><FontAwesomeIcon icon={faInstagramSquare} /></a></li>
+              <li><a href='#'><FontAwesomeIcon icon={faTwitterSquare} /></a></li>  
             </ul>
   )
 }

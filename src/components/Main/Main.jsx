@@ -21,9 +21,9 @@ export default function Main() {
                 <a href='#'>Read Free Demo</a>
             </div> 
             <div className={s.points}>
-                <RadioBtn data={{'name':'Pages:', 'text': '250pages'}}></RadioBtn>   
-                <RadioBtn data={{'name':'Length:', 'text': '10 Hours'}}></RadioBtn>  
-                <RadioBtn data={{'name':'Rating:', 'text': '4.5/5 (305 ratings)'}}></RadioBtn>
+                <RadioBtn name='Pages:' text='250pages'></RadioBtn>   
+                <RadioBtn name='Length:' text='10 Hours'></RadioBtn>  
+                <RadioBtn name='Rating:' text='4.5/5 (305 ratings)'></RadioBtn>
             </div>  
         </div>
         <div>
