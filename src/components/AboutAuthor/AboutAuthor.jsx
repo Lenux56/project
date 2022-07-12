@@ -1,14 +1,14 @@
 import React from 'react'
 import s from './AboutAuthor.module.sass'
-import author from '../../images/author.png';
-import code from '../../images/code.png';
+//import author from '/images/author.png';
+//import code from '/images/code.png';
 import ImageFrame from '../../UI/ImageFrame';
 import LeftLine from '../../UI/LeftLine/LeftLine';
 
 export default function AboutAuthor() {
   return (
         <div className={s.inner}> 
-            <ImageFrame author={author} offset='40'/>  
+            <ImageFrame author='/images/author.png' offset='40'/>  
             <div className={s.aboutAuthor}>
                 <LeftLine>About the Author</LeftLine>
                 <p className={s.desc}>
@@ -32,7 +32,7 @@ export default function AboutAuthor() {
                 </ul>
 
                 <div className={s.infoAuthor}>
-                    <img src={code} alt="code" className={s.code}/>
+                    <img src='/images/code.png' alt="code" className={s.code}/>
                     <div className={s.contact}>
                         <p className={s.name}>John Abraham , Ph.d</p>
                         <p className={s.mail}>Mail: <a href="mailto:johnabraham@gmail.com">johnabraham@gmail.com</a></p>

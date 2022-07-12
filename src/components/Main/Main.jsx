@@ -1,5 +1,5 @@
 import React from 'react'
-import main from '../../images/main.png'
+//import main from '/images/main.png'
 import s from './Main.module.sass'
 import Button from '../../UI/Button'
 import RadioBtn from '../../UI/RadioBtn/RadioBtn'
@@ -27,7 +27,7 @@ export default function Main() {
             </div>  
         </div>
         <div>
-            <img src={main} alt="Main book" />
+            <img src='/images/main.png' alt="Main book" />
         </div>
     </main>
   )

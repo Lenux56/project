@@ -1,9 +1,9 @@
-const { Book } = require('../models/models');
+const { Books } = require('../models/model');
 
 class BookController {
 
 	async getAll(req, res) {
-		const books = await Book.findAll();
+		const books = await Books.findAll();
 		return res.send(books)
 	}
 }
