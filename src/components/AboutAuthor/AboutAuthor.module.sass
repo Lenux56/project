@@ -2,7 +2,6 @@
     display: flex
     align-items: center
     justify-content: space-between
-    padding: 80px 0 40px 0
 
     ul
         list-style: none
@@ -24,8 +23,8 @@
 .aboutAuthor
     display: flex
     flex-direction: column
-    grid-gap: 60px
     max-width: 609px
+    grid-gap: 30px
 
 .desc
     font-family: 'Inter'
@@ -83,4 +82,39 @@
 
     &:hover
         transform: scale(1.1)
-        
+
+@media (max-width: 1150px)
+	.aboutAuthor
+		width: 80%
+		padding-left: 15px
+
+	.desc, .numberDesc
+		font-size: 15px
+	
+	.number
+		font-size: 40px
+			
+	.infoAuthor
+		width: 100%
+
+	.code
+		width: 25%
+            
+@media (max-width: 950px)
+    .inner
+        ul
+            li
+                &:not(:first-child)::after
+                    left: -15%
+
+@media (max-width: 800px)
+	.inner
+		flex-direction: column
+
+	.aboutAuthor
+		width: 100%
+	.inner
+		ul
+			li
+				&:not(:first-child)::after
+					left: -50%
